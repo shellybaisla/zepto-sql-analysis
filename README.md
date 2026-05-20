@@ -18,8 +18,8 @@ Source : Zepto product inventory
 
 
 ## Column                        Description
-sku_id                          Unique Product ID
-category                        Product category
+sku_id                          Unique Product ID <br>
+category                        Product category <br>
 name                            Product name
 mrp                             Maximum retail price(₹)
 discountpercent                 Discount % offered
