@@ -17,17 +17,19 @@ Rows : 1000+ products
 Source : Zepto product inventory
 
 
-## Column                        Description
-sku_id                          Unique Product ID <br>
-category                        Product category <br>
-name                            Product name
-mrp                             Maximum retail price(₹)
-discountpercent                 Discount % offered
-availableQuantity               Units in stock
-discountedSellingPrice          Final price after discount(₹)
-WeightInGms                     Product weight in grams
-outOfStock                      Stock availablity(True/False)
-quantity                        Quantity per unit
+## 📋 Column Description
+| Column | Description |
+|---|---|
+| sku_id | Unique Product ID |
+| category | Product category |
+| name | Product name |
+| mrp | Maximum retail price (₹) |
+| discountPercent | Discount % offered |
+| availableQuantity | Units in stock |
+| discountedSellingPrice | Final price after discount (₹) |
+| weightInGms | Product weight in grams |
+| outOfStock | Stock availability (True/False) |
+| quantity | Quantity per unit |
 
 ## Data Cleaning
 
@@ -35,6 +37,18 @@ quantity                        Quantity per unit
 - ✅ Handled NULL values across all columns
 - 💰 Converted prices from paise to rupees (÷ 100)
 - 🔍 Identified duplicate SKUs for same product names
+
+## 📊 Business Questions Answered
+| # | Question |
+|---|---|
+| Q1 | Top 10 best-value products by discount % |
+| Q2 | High MRP products (>₹300) out of stock |
+| Q3 | Estimated revenue per category |
+| Q4 | Premium products (MRP>₹500) with low discount |
+| Q5 | Top 5 categories by average discount |
+| Q6 | Price per gram for products above 100g |
+| Q7 | Weight segmentation (Low/Medium/Bulk) |
+| Q8 | Total inventory weight per category |
 
 ## Key Insights
 
