@@ -1,23 +1,23 @@
-## zepto Product Inventory - SQL Analysis
+# zepto Product Inventory - SQL Analysis
 
-# Project Overview
+## Project Overview
 
 This project performs end_to_end SQL analysis on Zepto's Product Inventory data.
 It covers data exploration,cleaning, and business insights generation to understand pricing,discounts,stock,availablity, and category-wise revenue.
 
-# Tools & Technologies
+## Tools & Technologies
 
 Tool                        Purpose
 MYSQL                       Database & querying
 MySql Workbench              Query execution & results
 
-# Dataset
+## Dataset
 file : dataset/zepto_v2.csv
 Rows : 1000+ products
 Source : Zepto product inventory
 
 
-# Column                        Description
+## Column                        Description
 sku_id                          Unique Product ID
 category                        Product category
 name                            Product name
@@ -29,14 +29,14 @@ WeightInGms                     Product weight in grams
 outOfStock                      Stock availablity(True/False)
 quantity                        Quantity per unit
 
-# Data Cleaning
+## Data Cleaning
 
 - ❌ Removed products where MRP = 0 (invalid entries)
 - ✅ Handled NULL values across all columns
 - 💰 Converted prices from paise to rupees (÷ 100)
 - 🔍 Identified duplicate SKUs for same product names
 
-# Key Insights
+## Key Insights
 
 -  Fruits & Vegetables has the highest total inventory weight
 -  Several high-MRP products are out of stock — revenue opportunity
@@ -45,7 +45,7 @@ quantity                        Quantity per unit
 -  Multiple SKUs exist for same product names
 
 
-# How to Run
+## How to Run
 1. Open  MYSQL Workbench
 2. Create DATABASe
 
@@ -55,7 +55,7 @@ USE zepto_sql_project;
 3. Import zepto_v2.csv into zepto table
 4. Open sql_analysis.sql and run section by section
 
-# Author
+## Author
 Shelly Baisla
 Aspiring Data Analyst | SQL
 
